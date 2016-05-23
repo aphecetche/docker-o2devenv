@@ -6,6 +6,7 @@ RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
         make wget which gcc gcc-c++ libtool automake autoconf zip \
         exinfo bison flex openssl-devel \
         libxml2-devel swig perl-ExtUtils-Embed && \
+        environment-modules && \
         ln -s /usr/bin/cmake3 /usr/bin/cmake && \
         cd /tmp && \
         curl -O http://mirror.ibcp.fr/pub/gnu/gsl/gsl-1.16.tar.gz && \
